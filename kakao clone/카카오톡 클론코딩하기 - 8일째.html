@@ -60,15 +60,16 @@
         <header> <!--website의 제목ㅡ 머릿말-->
             <h1>The Gata Times</h1> 
         </header>
-        <main> <!--본문-->
+        <main> <!--본문을 의미하는 태그-->
             <p>오늘의 날씨는 매우 화창합니다.</p>
         </main>
-        <footer> <!--꼬릿말-->
+        <footer> <!--꼬릿말 의미하는 태그-->
             &copy; 2023 Gata
         </footer>
 
-<!-- # 아래처럼 위의 태그들을 전부 div로 바꿔줘도 된다. 하지만 코드 자체를 이해하는데 약간 어렵다.
-그래서 semantic 방식으로 코드를 짜는 것을 추천! -->
+<!-- # 아래처럼 위의 태그들을 전부 div(non-semantic tag:의미없는 태그)로 바꿔줘도 된다. 하지만 코드 자체를 이해하는데 약간 어렵다.
+그래서 semantic 방식으로 코드를 짜는 것을 추천!  이들을 container라고 한다. 모두 div로 대체 가능하지만 코드를 작성하거나 볼 때 어떤 의미인지
+직관적으로 쉽게 파악하기 위해서 semantic 태그를 쓴다. -->
         <div>
             <h1>The Gata Times</h1> <!--header 대신 div 써도 된다.-->
         </div>
@@ -79,7 +80,17 @@
             &copy; 2023 Gata
         </div>
 
-            
+        <span>짧은 단어를 위한 태그 hello</span>
+        <p>문단을 위한 태그, paragraph</p>
+        <!-- # span이나 p(non-semantic tag)를 사용해도 문제는 없지만 나와 팀원이 보기 쉽도록 semantic tag를 쓰는 것이 좋다.
+        예전에는 semantic 태그가 없어서 div태그 box가 덕지덕지 였지만 이제는 의미있는 box를 사용할 수 있다.
+        
+        h1 h2 h3가 뭉탱이로 있으면 hgroup태그를 사용해준다.
+        attribute 값에는 항상 큰따옴표를 사용해준다. ⭐
+
+        어떤 attribute(id)는 모든 태그가 사용할 수 있고, 일부 attribute(type, src)는 특정 태그(form에서의 input, image)에서만 사용한다.
+        
+        자주 사용하는 태그인 header, main, footer, navigation, sidebar/aside 외에는 암기대신 구글에서 찾아보자. -->
     </form>
 </body>
 </html>
