@@ -14,29 +14,39 @@
 
 <body>
     <form>
-        <label for="profile">Profile Photo</label> <!--label은 input과 함께여야 동작하고 label 태그는 for이라는 attribute를 써준다.-->
+        <label for="profile">Profile Photo</label> <!--label태그는 input 태그와 함께여야 동작하고 label 태그는 for이라는 attribute를 써준다.-->
         <input id="profile" type="file" accept=".png,.pdf"> <!--input tag에는 id라는 attribute를 써준다. -->
         <!--for과 id에 들어가는 value값은 동일해야 한다.
         label은 for과 같은 값을 갖는 id의 input 구문을 동작시켜준다.-->
 
-        <label for="first-name">First Name</label>
-        <input id="first-name" required placeholder="Name" type="text">
+        <br>
+
+        <label for="first-name">성</label>
+        <input id="first-name" required placeholder="First Name을 입력하세요." type="text">
         <!--First name 글자를 웹사이트에서 누르면 name 칸에 입력을 바로 할 수 있게 된다.-->
         
-        <label for="website">Website</label>
-        <input id="website" required placeholder="Name" type="url"/>
+        <br>
+
+        <label for="website">웹사이트</label>
+        <input id="website" required placeholder="url을 입력하세요." type="url"/>
         <!--url 전용 칸이기 때문에 url외에 다른 문자를 쓰면 'url을 입력하세요'라는 창이 뜬다. -->
 
-        <label for="email">Email</label>
-        <input id="email" required placeholder="Name" type="email"/>
+        <br>
+
+        <label for="email">이메일</label>
+        <input id="email" required placeholder="Email을 입력하세요." type="email"/>
         <!--완전한 이메일 형식이 될 때 까지 '@을 이메일에 포함시켜주세요.'등의 문구가 뜬다.-->
 
-        <label for="website">Website</label>
-        <input id="website" required placeholder="Name" type="range"/>
+        <br>
+
+        <label for="range">범위</label>
+        <input id="range" required placeholder="Name" type="range"/>
         <!--range type-->
 
-        <label for="website">Website</label>
-        <input id="website" required placeholder="Name" type="date"/>
+        <br>
+
+        <label for="date">날짜</label>
+        <input id="date" required placeholder="Name" type="date"/>
         <!--date type/문자가 아닌 숫자를 입력할 수 있고 ⬇️⬆️로 업다운 할 수 있다.-->
 
         <!--id는 body안에 어떤 태그에든 넣을 수 있는 attribute다.
