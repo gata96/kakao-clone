@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>노마드코더 챌린지 과제4</title>
+</head>
+<body>
+    <h2>Create An Account</h2>
+    <form>
+        <div>
+            <label for="First-name">First name</label>
+            <input required type="text" id="First-name" placeholder="First name" />
+        </div>
+        <div>
+            <label for="Last-name">Last name</label>
+            <input required type="text" id="Last-name" placeholder="Last name" />
+        </div>
+        <div>
+            <label for="Email">Email</label>
+            <input required type="email" id="Email" placeholder="Email" />
+        </div>
+        <div>
+            <label for="Username">Username</label>
+            <input required type="text" id="Username" placeholder="Username" minlength="5"/>
+        </div>
+        <div>
+            <label for="Password">Password</label>
+            <input required type="password" id="Password" placeholder="Password" minlength="10"/>
+        </div>
+        <div>
+            <label for="Birth-date">Birth date</label>
+            <input required type="date" id="Birth-date" />
+        </div>
+        <div>
+            <label for="love-level">How happy are you?</label>
+            <input required id="love-level" type="range" list="love-level" />
+            <datalist id="love-level">
+                <option value="0"></option>
+                <option value="10"></option>
+                <option value="20"></option>
+                <option value="30"></option>
+                <option value="40"></option>
+                <option value="50"></option>
+                <option value="60"></option>
+                <option value="70"></option>
+                <option value="80"></option>
+                <option value="90"></option>
+                <option value="100"></option>
+            </datalist>
+        </div>
+        <div>
+            <label for="fav-color">What is your fav.color?</label>
+            <input required id="fav-color" type="color" />
+        </div>
+        <div>
+            <input type="submit" value="Create Account" />
+        </div>
+    </form>
+</body>
+</html>
