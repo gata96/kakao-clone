@@ -1,15 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lora:ital,wght@1,700&display=swap');
-@import "reset.css";
-@import "status-bar.css";
-@import "icon-buttons.css";
-@import "main-header.css";
-@import "screen-header.css";
-
 body {
-    border: 5px solid #01c7ad;
-    padding: 0 30px;
-    font-family: 'Gabarito', sans-serif;
-    font-weight: 600;
+    background-color: rgb(41, 216, 216);
+}
+
+.group-dot {
+    display: flex;
+    margin: 200px auto;
+    justify-content: center;
+    align-items: center;   
+}
+
+.group-dot__column {
+    background-color: white;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 25px;
 }
 
 
+
+.group-stick {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 200px auto; 
+
+}
+
+.group-stick__column {
+    background-color: white;
+    width: 10px;
+    height: 40px;
+    margin-right: 5px;
+}
